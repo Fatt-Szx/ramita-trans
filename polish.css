@@ -1,0 +1,171 @@
+/* Tipografi dan material bersama untuk seluruh tampilan RAMITA TRANS. */
+:root {
+  --font-body: 'DM Sans', 'Segoe UI', Arial, sans-serif;
+  --font-display: 'Manrope', 'Segoe UI', Arial, sans-serif;
+  --glass-light: rgba(255, 255, 255, .73);
+  --glass-line: rgba(255, 255, 255, .82);
+  --glass-shadow: 0 18px 48px rgba(24, 40, 48, .10);
+}
+
+body, button, input, select, textarea { font-family: var(--font-body); }
+body { font-size: 15px; line-height: 1.65; background: #f7f6f1; }
+h1, h2, h3, .brand, .quote-journey { font-family: var(--font-display); }
+h1, h2, h3 { line-height: 1.16; }
+.button, .main-nav, .field input, .field select, .field textarea { font-size: 14px; }
+.section-head h2, .faq-layout h2, .contact-section h2, .story-copy h2 { font-size: clamp(34px, 4.1vw, 52px); letter-spacing: -.055em; }
+.section-head > p, .story-copy > p, .contact-section p, .faq-list p, .rental-service-card p { font-size: 14px; line-height: 1.75; }
+.field > span, .faq-list summary, .fleet-card-body > p { font-size: 14px; }
+.section-kicker, .contact-card > span, .footer-grid h3 { font-size: 11px; letter-spacing: .13em; }
+.fleet-card-body h3 { font-size: 25px; }
+.rental-service-card h3 { font-size: 22px; }
+.steps-grid h3 { font-size: 18px; }
+.steps-grid p, .rental-value-list p, .footer-grid > div > p, .footer-grid > div > a:not(.brand) { font-size: 13px; line-height: 1.7; }
+.footer-bottom { font-size: 12px; }
+
+main { background: radial-gradient(circle at 12% 24%, rgba(250, 204, 21, .14), transparent 29%), radial-gradient(circle at 88% 58%, rgba(101, 201, 0, .10), transparent 31%), #f7f6f1; }
+.site-header { background: rgba(20, 25, 28, .88); border-bottom: 1px solid rgba(255, 255, 255, .12); backdrop-filter: blur(20px) saturate(140%); -webkit-backdrop-filter: blur(20px) saturate(140%); }
+.rental-hero .glass-panel { background: rgba(13, 29, 40, .54); border-color: rgba(255, 255, 255, .37); backdrop-filter: blur(19px) saturate(145%); -webkit-backdrop-filter: blur(19px) saturate(145%); }
+.rental-panel, .rental-fleet-card, .rental-service-card, .steps-grid > div, .faq-list details, .contact-card, .floating-wa-panel, .quote-modal, .fleet-modal {
+  background: var(--glass-light);
+  border: 1px solid var(--glass-line);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(18px) saturate(145%);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+}
+.rental-fleet-section, .steps-section { background: transparent; }
+.rental-services-section { background: linear-gradient(125deg, rgba(255, 248, 231, .72), rgba(239, 250, 219, .42)); }
+.faq-section { background: radial-gradient(circle at 14% 35%, rgba(250, 204, 21, .19), transparent 45%), rgba(255, 248, 235, .44); }
+.rental-fleet-card, .rental-service-card, .steps-grid > div, .faq-list details { border-radius: 18px; }
+.rental-fleet-card, .rental-service-card, .steps-grid > div { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+.rental-fleet-card:hover, .rental-service-card:hover, .steps-grid > div:hover { transform: translateY(-5px); box-shadow: 0 24px 52px rgba(24, 40, 48, .16); }
+.rental-fleet-card { overflow: hidden; }
+.rental-service-card:first-child { background: rgba(24, 32, 32, .87); border-color: rgba(255, 255, 255, .18); }
+.rental-service-card .service-index { font-size: 32px; }
+.steps-grid > div { padding: 24px; border-top: 3px solid var(--orange); }
+.steps-grid span { font-size: 34px; }
+.steps-grid h3 { margin-top: 14px; }
+.faq-list details { padding: 0 20px; margin-bottom: 11px; border-color: var(--glass-line); }
+.faq-list details:first-child { border-top-color: var(--glass-line); }
+.faq-list summary { padding: 19px 0; }
+.faq-list details[open] { border-color: rgba(245, 158, 11, .55); }
+.faq-list details[open] p { animation: detail-enter .25s ease both; }
+.rental-story { background: linear-gradient(125deg, #101c20, #23302d 62%, #151c1c); }
+.story-copy { padding: 35px; border: 1px solid rgba(255, 255, 255, .16); border-radius: 20px; background: rgba(255, 255, 255, .065); box-shadow: 0 25px 50px rgba(0, 0, 0, .14); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.story-image { background: #f7f7f4; border: 1px solid rgba(255, 255, 255, .18); box-shadow: 0 25px 55px rgba(0, 0, 0, .22); }
+.story-image img { object-fit: contain; object-position: center; }
+.contact-section { background: radial-gradient(circle at 80% 0%, rgba(255, 255, 255, .47), transparent 35%), linear-gradient(120deg, #facc15, #f5a516); }
+.contact-card { color: var(--ink); background: rgba(255, 255, 255, .73); }
+.contact-card h3 { margin: 14px 0 6px; font-size: 24px; letter-spacing: -.04em; }
+.contact-card > p { margin: 0 0 18px; }
+.contact-placeholder { background: rgba(255, 255, 255, .56); }
+.contact-placeholder a { color: #24412a; font-size: 15px; font-weight: 800; }
+.contact-placeholder a:hover { text-decoration: underline; }
+.contact-info { display: grid; margin: 18px 0; border-top: 1px solid rgba(23, 23, 23, .12); }
+.contact-info-row { display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 13px; align-items: start; padding: 17px 0; border-bottom: 1px solid rgba(23, 23, 23, .12); }
+.contact-info-row > div { min-width: 0; }
+.contact-info-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--green-soft); color: var(--green-ink); font-size: 22px; line-height: 1; }
+.contact-info-row strong { display: block; margin-bottom: 4px; font-size: 12px; line-height: 1.4; color: var(--ink); }
+.contact-info-row p { max-width: none; margin: 0; color: #475569; font-size: 13px; line-height: 1.65; font-weight: 500; overflow-wrap: anywhere; }
+.contact-map-link, .contact-map-unavailable { display: inline-block; margin-top: 8px; font-size: 12px; line-height: 1.5; font-weight: 800; overflow-wrap: anywhere; }
+.contact-map-link { color: var(--green-ink); text-decoration: underline; text-underline-offset: 3px; }
+.contact-map-unavailable { color: var(--muted); font-weight: 500; }
+.contact-placeholder { overflow-wrap: anywhere; }
+.rental-contact-box { min-width: 0; }
+.rental-contact-grid.is-single { grid-template-columns: minmax(0, 720px); justify-content: center; }
+.rental-contact-box .contact-info { margin-bottom: 0; }
+.page-hero .container > div { min-width: 0; max-width: 100%; }
+.page-hero h1 { max-width: 100%; overflow-wrap: break-word; }
+.site-footer { background: linear-gradient(125deg, #131a1b, #232b29); }
+.footer-grid > div { min-width: 0; }
+.footer-grid h3 { color: #fff; }
+.footer-social-links { display: grid; grid-template-columns: repeat(4, 42px); gap: 9px; }
+.footer-social-links a {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 10px;
+  color: #e7e9e8;
+  background: rgba(255, 255, 255, .055);
+  transition: color .2s ease, border-color .2s ease, background .2s ease;
+}
+.footer-social-links a:hover { color: var(--gold); border-color: rgba(250, 204, 21, .55); background: rgba(250, 204, 21, .08); }
+.footer-social-links svg { display: block; width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.footer-social-links svg .fill { fill: currentColor; stroke: none; }
+.footer-social > p { margin-top: 16px!important; }
+.floating-wa-panel, .quote-modal, .fleet-modal { background: rgba(255, 255, 255, .91); }
+.field input, .field select, .field textarea { background: rgba(255, 255, 255, .82); border-color: rgba(124, 139, 135, .35); }
+.field input:focus, .field select:focus, .field textarea:focus { background: #fff; }
+.button { transition: transform .25s ease, box-shadow .25s ease, background .25s ease; }
+.button:hover { box-shadow: 0 9px 20px rgba(24, 40, 48, .16); }
+
+/* Foto keempat Armada 04 berformat tegak dan perlu ruang lebih lapang. */
+.fleet-carousel-slide img[src$="/bus-04/rear.webp"] { width: 70%; height: 70%; object-fit: contain; }
+.fleet-gallery-main { position: relative; isolation: isolate; }
+.fleet-gallery-main figcaption {
+  position: absolute;
+  z-index: 2;
+  left: 16px;
+  bottom: 16px;
+  width: auto;
+  max-width: calc(100% - 32px);
+  margin: 0;
+  padding: 9px 13px;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 8px;
+  background: rgba(17, 24, 27, .84);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.fleet-modal .fleet-gallery-main img[src$="/bus-04/rear.webp"] { display: block; width: 74%; height: min(46vh, 430px); max-height: 46vh; margin-inline: auto; aspect-ratio: auto; object-fit: contain; }
+
+/* Animasi hanya diaktifkan setelah JavaScript memasang observer. */
+@keyframes detail-enter { from { opacity: 0; transform: translateY(-7px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes hero-enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: no-preference) {
+  .rental-hero .glass-panel { animation: hero-enter .7s ease both; }
+  .motion-ready .js-reveal { opacity: 0; transform: translateY(24px); transition: opacity .65s ease, transform .65s cubic-bezier(.22, .8, .25, 1); transition-delay: var(--reveal-delay, 0ms); }
+  .motion-ready .js-reveal.is-visible { opacity: 1; transform: translateY(0); }
+  .motion-ready .js-reveal.is-visible:is(.rental-fleet-card, .rental-service-card, .steps-grid > div):hover { transform: translateY(-5px); }
+}
+
+/* Panel lokal memakai keluarga font dan material yang sama. */
+.admin-body { background: radial-gradient(circle at 75% 10%, rgba(101, 201, 0, .10), transparent 33%), #f7f6f1; }
+.admin-sidebar { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+.stat-card, .admin-panel, .content-card, .admin-callout > div { background: rgba(255, 255, 255, .75); border: 1px solid rgba(255, 255, 255, .86); box-shadow: var(--glass-shadow); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.admin-body h1, .admin-body h2, .admin-body h3 { font-family: var(--font-display); }
+
+@media (max-width: 760px) {
+  .page-hero .container > div { width: 100%; }
+  .rental-contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .main-nav.open { background: rgba(20, 25, 28, .94); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+  .section-head h2, .faq-layout h2, .contact-section h2, .story-copy h2 { font-size: clamp(31px, 7vw, 42px); }
+  .story-copy { padding: 26px; }
+  .fleet-modal .fleet-gallery-main img[src$="/bus-04/rear.webp"] { width: 68%; height: 31vh; max-height: 31vh; }
+}
+@media (max-width: 540px) {
+  .section-head h2, .faq-layout h2, .contact-section h2, .story-copy h2 { font-size: 34px; }
+  .steps-grid > div { padding: 21px; }
+  .faq-list details { padding: 0 16px; }
+  .story-copy { padding: 22px; }
+  .fleet-carousel-slide img[src$="/bus-04/rear.webp"] { width: 66%; height: 66%; }
+  .fleet-gallery-main figcaption { left: 10px; bottom: 10px; max-width: calc(100% - 20px); padding: 7px 10px; font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rental-hero .glass-panel, .faq-list details[open] p { animation: none; }
+  .rental-fleet-card, .rental-service-card, .steps-grid > div, .button, .motion-ready .js-reveal { transition: none; transform: none; opacity: 1; }
+}

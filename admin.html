@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171717">
+  <title>Panel Admin Lokal — RAMITA TRANS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="polish.css">
+  <script src="data.js" defer></script>
+  <script src="admin.js" defer></script>
+</head>
+<body class="admin-body">
+  <div class="demo-ribbon"><span class="demo-dot"></span> PANEL KONFIGURASI LOKAL <span class="ribbon-extra">Perubahan disimpan hanya di browser ini, tanpa akun atau server.</span></div>
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="admin-sidebar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span><span></span></span><span>RAMITA<span class="brand-accent">TRANS</span><small>PANEL LOKAL</small></span></a>
+      <div class="sidebar-label">PENGELOLAAN</div>
+      <nav aria-label="Navigasi panel admin" id="admin-nav">
+        <button type="button" data-view="overview" class="active">⌂ <span>Ringkasan</span></button>
+        <button type="button" data-view="requests">◷ <span>Draf Konsultasi</span></button>
+        <button type="button" data-view="fleet">▣ <span>Armada</span></button>
+        <button type="button" data-view="services">◇ <span>Layanan Sewa</span></button>
+        <button type="button" data-view="content">✎ <span>Konten & Kontak</span></button>
+      </nav>
+      <a class="sidebar-site" href="index.html" target="_blank" rel="noopener">Lihat Website ↗</a>
+    </aside>
+    <div class="admin-main">
+      <header class="admin-topbar"><button class="admin-menu" type="button" aria-label="Buka menu admin" aria-expanded="false">☰</button><div><span>RAMITA TRANS</span><strong>Panel Admin <small>Penyimpanan Lokal</small></strong></div><span class="admin-avatar">RT</span></header>
+      <main class="admin-content"><div id="admin-view" aria-live="polite"></div></main>
+    </div>
+  </div>
+  <dialog id="admin-dialog" class="modal admin-modal"><button class="modal-close" type="button" aria-label="Tutup dialog">×</button><div id="admin-dialog-content"></div></dialog>
+  <div id="admin-toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
