@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>RAMITA TRANS</title>
+  <rect width="64" height="64" rx="15" fill="#f59e0b"/>
+  <path d="M16 17h36L46.5 29H10.5L16 17Z" fill="#171717"/>
+  <path d="M17.5 35h36L48 47H12l5.5-12Z" fill="#171717"/>
+  <circle cx="18" cy="52" r="3" fill="#65c900"/>
+  <circle cx="43" cy="52" r="3" fill="#65c900"/>
+</svg>
